@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, #FFD580, #FF8C00); /* Degradado de naranja claro a oscuro */
+        }
+
+        model-viewer {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Use it like any other HTML element -->
+    <model-viewer
+        alt="Modelo"
+        src="proyecto.glb" 
+        ar 
+        environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+        shadow-intensity="1" 
+        camera-controls
+        touch-action="pan-y">
+    </model-viewer>
+
+    <!-- Import the component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <!-- environment-image="shared-assets/environments/moon_1k.hdr"
+</body>
+
+</html>
